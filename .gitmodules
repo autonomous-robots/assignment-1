@@ -1,0 +1,6 @@
+[submodule "src/turtlebot3_interfaces"]
+	path = src/turtlebot3_interfaces
+	url = git@github.com:autonomous-robots/turtlebot3_interfaces.git
+[submodule "src/turtlebot3_mapper"]
+	path = src/turtlebot3_mapper
+	url = git@github.com:autonomous-robots/turtlebot3_mapper.git
