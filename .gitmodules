@@ -4,3 +4,6 @@
 [submodule "src/turtlebot3_mapper"]
 	path = src/turtlebot3_mapper
 	url = git@github.com:autonomous-robots/turtlebot3_mapper.git
+[submodule "src/worlds_gazebo"]
+	path = src/worlds_gazebo
+	url = git@github.com:autonomous-robots/worlds_gazebo.git
