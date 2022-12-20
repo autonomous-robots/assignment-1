@@ -25,9 +25,7 @@ RUN python3 -m pip install --upgrade \
         setuptools==58.2.0 \
         python-sdformat==0.4.0
 
-COPY src/worlds_gazebo/worlds/autonomous_robots_world_1.world /opt/ros/humble/share/turtlebot3_gazebo/worlds/
-COPY src/worlds_gazebo/worlds/autonomous_robots_world_2.world /opt/ros/humble/share/turtlebot3_gazebo/worlds/
-
+COPY src/worlds_gazebo/worlds/*.world /opt/ros/humble/share/turtlebot3_gazebo/worlds/
 COPY src/worlds_gazebo/models/ /opt/ros/humble/share/turtlebot3_gazebo/models/
 COPY src/worlds_gazebo/launch/turtlebot3_world.launch.py /opt/ros/humble/share/turtlebot3_gazebo/launch/
 
