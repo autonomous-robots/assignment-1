@@ -60,7 +60,32 @@ The algorithm occupancy grid mapping in below loops through all grid cells $i$, 
     <img src="etc/images/turtlebot3_mission_controller.png" alt="turtlebot3_mission_controller" width="400"/>
 </p>
 
+## Results
 
+<p align="center">
+    <img src="etc/images/result-1.png" alt="result-1"/>
+</p>
+
+$$ result = \begin{Bmatrix} x & y & w & h \\ -1.09 & -1.12 & 0.36 & 0.33 \\ -0.01 & -1.12 & 0.33& 0.33 \\ 1.1 & -1.12 & 0.33 & 0.33 \\ -1.09 & -0.01 & 0.36 & 0.3 \\ -0.01 & -0.01 & 0.33 & 0.33 \\ 1.1 & -0.01 & 0.33 & 0.3 \\ -1.12& 1.07 & 0.33 & 0.3 \\ -0.01 & 1.07 & 0.33 & 0.3 \\ 1.1 & 1.07 & 0.33 & 0.3 \end{Bmatrix}$$
+
+<p align="center">
+    <img src="etc/images/result-2.png" alt="result-2"/>
+</p>
+
+$$ result = \begin{Bmatrix} x & y & w & h \\ -1.09 & -1.81 & 0.33 & 0.33 \\ 1.1 & -1.12 & 0.33 & 0.33 \\ -0.01 & -0.82 & 0.33 & 0.33 \\ -1.09 & -0.01 & 0.3 & 0.33 \\ -0.01 & -0.01 & 0.33 & 0.33 \\ 1.07 & -0.01 & 0.33 & 0.33 \\ -0.01 & 0.8 & 0.3 & 0.33 \\ 1.07 & 1.1 & 0.33 & 0.3 \\ -1.09 & 1.79 & 0.33 & 0.33\end{Bmatrix}$$
+
+
+<p align="center">
+    <img src="etc/images/result-3.png" alt="result-3"/>
+</p>
+
+$$ result = \begin{Bmatrix} x & y & w & h \\ -1.12 & -1.12 & 0.33 & 0.33 \\ -0.01 & -0.67 & 0.36 & 0.33 \\ -1.12 & -0.01 & 0.33 & 0.33 \\ 1.07 & 0.02 & 0.33 & 0.3 \\ -0.01 & 0.65 & 0.33 & 0.36 \\ -1.12 & 1.07 & 0.33 & 0.33\end{Bmatrix}$$
+
+<p align="center">
+    <img src="etc/images/result-4.png" alt="result-4"/>
+</p>
+
+$$ result = \begin{Bmatrix} x & y & w & h \\ -1.66 & -1.66 & 0.3 & 0.36 \\ 0.02 & -0.52 & 0.36 & 0.33 \\ 0.5 &-0.49 & 0.36 & 0.36 \\ -0.01 & -0.13 & 0.36 & 0.33 \\ 0.5 & -0.1 & 0.36 & 0.33 \\ -0.01 & 0.5 & 0.33 & 0.3 \\ 0.5 & 0.5 & 0.36 & 0.33 \\ -0.01 & 0.89 & 0.3 & 0.3 \\ 0.47 & 0.89 & 0.33 & 0.33 \\ 1.61 & 1.64 & 0.33 & 0.33\end{Bmatrix}$$
 
 ## Building
 
