@@ -115,6 +115,13 @@ $$ result = \begin{Bmatrix} x & y & w & h \\\ -1.66 & -1.66 & 0.3 & 0.36 \\\ 0.
 The ROS2 nodes proposed here solved the problem with interesting results, as long as the obstacles are not connected or too close to the walls. Furthermore, it is not limited to resolving only in the `turtlebot3_world` world, any close enviromment should work fine.
 
 ## Building
+
+Get this project,
+```bash
+git clone --recursive https://github.com/autonomous-robots/assignment-1.git
+cd assignment-1/
+```
+
 You can build all packages needed to run this assignment with docker:
 ```bash
 docker build -t assignment-1:latest -f etc/docker/Dockerfile .
