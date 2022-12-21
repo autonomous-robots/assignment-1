@@ -2,6 +2,10 @@
 
 The goal in this assignment is to explore concepts of perception in a robotic system to accomplish a task. Given a mobile robot with a set of sensors in a partially known environment, objects/obstacles must be detected and counted. In addition, the robot must be started in a random position and not rely on any teleoperated commands.
 
+## Tools 
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height='40' weight='40'/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height='40' weight='40'/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" height='40' weight='40'/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original-wordmark.svg" height='40' weight='40'/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg" height='40' weight='40'/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" height='40' weight='40'/>
+
 ## Methodology
 
 The task to be solved here has been divided into several other tasks that together are the complete assignment resolution.
@@ -32,7 +36,15 @@ The occupancy grid mapping algorithm uses the log-odds representation of occupan
 
 $$l_{t,i} = log(\frac{p(m_i|z_{1:t},x_{1:t})}{1 - p(m_i|z_{1:t},x_{1:t})})$$
 
-The probabilities are easily recovered from the log-odds ratio:
+where, 
+
+- $m_i :$ grid cell $i$ 
+
+- $z_{i:t} :$ Collection of measurements up to time $t$
+
+- $x_{i:t} :$ Collection of robot's pose up to time $t$
+
+Using this representation we can avoid numerical instabilities for probabilities near zero or one and compute the problem with less cost. The probabilities are easily recovered from the log-odds ratio:
 
 $$p(m_i|z_{1:t},x_{1:t}) = 1 - \frac{1}{1+ exp(l_{t,i})}$$
 
@@ -141,3 +153,15 @@ ros2 run turtlebot3_mapper turtlebot3_mission_client -f 200
 ```
 
 After the task is finished, you can view the results in the generated `results.txt` file.
+
+## Other sources of information
+
+- THRUN, Sebastian; BURGARD, Wolfren; FOX, Dieter. Probabilistic Robotics. MIT Press, 2005. p. 221-243.
+
+- SAKAI, Atsushi. Python Robotics, Python sample codes for robotics algorithms. <https://github.com/AtsushiSakai/PythonRobotics>
+
+- ROBOTIS. ROS packages for Turtlebot3. <https://github.com/ROBOTIS-GIT/turtlebot3>.
+
+- ROBOTIS. Simulations for Turtlebot3. <https://github.com/ROBOTIS-GIT/turtlebot3_simulations>.
+
+- ROS PLANNING. ROS2 Navigation Framework and System. <https://github.com/ros-planning/navigation2>
